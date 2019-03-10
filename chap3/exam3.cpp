@@ -22,8 +22,8 @@ int main ()
 {
     string choice;
     float a, b;
-    int iresult;
-    float fresult;
+//    int iresult;
+//    float fresult;
     cout << "Please Choice float or int : ";
     cin >> choice;
 
@@ -35,13 +35,15 @@ int main ()
     cin >> a;
     cout << "2 argument : ";
     cin >> b;
-    iresult = a / b;
-    fresult = a / b;
+//    iresult = a / b;
+//    fresult = a / b;
     if (choice == "float")
     {
+        float fresult = a / b;
         cout << "Result : " << fresult << endl;
     } else if (choice == "int")
     {
+        int iresult = a / b;
         cout << "Result : " << iresult << endl;
     }
 }
